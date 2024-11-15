@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <h1>My To-Do List</h1>
+
+        <!-- Quote Section -->
+        <div class="quote-section">
+            <p id="quote-text">"Your time is limited, so don't waste it living someone else's life." – Steve Jobs</p>
+            <button onclick="generateQuote()">Show New Quote</button>
+        </div>
+
+        <!-- Task Input Section -->
+        <div class="task-input">
+            <input type="text" id="new-task" placeholder="Add a new task..." />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
